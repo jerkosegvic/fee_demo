@@ -1,3 +1,5 @@
 #!/bin/bash
+cd odbrojavanje
 gcc odbrojavanje.c -o odbrojavanje
-fee odbrojavanje --target amd64 > output.py
+cd ..
+fee odbrojavanje --target amd64 > fee_odb.py

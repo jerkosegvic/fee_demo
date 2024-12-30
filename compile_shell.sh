@@ -2,4 +2,4 @@
 cd shell
 go build
 cd ..
-fee shell/demoshell --target amd64 > output.py
+fee shell/demoshell --target amd64 > fee_shell.py
