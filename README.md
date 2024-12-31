@@ -1,6 +1,8 @@
 # fee_demo
 - Demonstration of tool `fileless-elf-exec` (https://github.com/nnsee/fileless-elf-exec)
 - Code for shell taken from https://gist.github.com/magisterquis/ce8b99b42188f4517efb3e1038a483de
+- [Video demo](https://youtu.be/hi2bJ6eiw8o)
+
 ### Usage
 - Tutorial for usage on fedora Linux
 - Install golang and fee: `bash install.sh`
@@ -17,3 +19,6 @@
 - In this scenario, victim and attacker are on the same host for simplicity
 - When executed with `fee` (i.e. without using reading source file from disk) it is harder to trace and detect the malware (in this case demoshell)
 ### Difference
+- After starting the program, exeute `ps aux | grep <program_name>` where `<program_name>` is either `'demoshell'` or `'odbrojavanje'` and find PID of the process
+- Execute `ls -l /proc/<PID>/exe`
+- If you executed program "normally" you should be able to see link to your executable file, while if you executed fee script, you should see something like `'/memfd: (deleted)'`, i.e. you won't be able to see link to the executable 
