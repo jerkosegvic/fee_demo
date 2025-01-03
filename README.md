@@ -12,6 +12,8 @@
 - Start countdown executable with `fee`: `python fee_odb.py`
 - Start shell executable "normaly": `./shell/demoshell`
 - Start shell executable with `fee`: `python fee_shell.py`
+- The scripts are configured for amd64 arhitecture, if you are using different arhitecture try removing (or changing to your arhitecture) `--target` flag
+  
 ### Shell demo
 - After starting the program, in the second terminal execute the following command: `rlwrap -S "$(printf '\033[95mds>\033[m ')" nc -nvlp 4444`
 - You should enter the interactive shell in which you can execute any command
